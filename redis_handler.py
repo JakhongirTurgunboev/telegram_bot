@@ -1,4 +1,4 @@
 import redis
 
-r = redis.Redis(decode_responses=True)
+r = redis.from_url("redis://red-cnk90oev3ddc7385ngog:6379", decode_responses=True)
 r.set('mykey', 'thevalueofmykey')
